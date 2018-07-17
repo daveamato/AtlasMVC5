@@ -1,5 +1,5 @@
 ﻿/// <autosync enabled="true" />
-/// <reference path="bootstrap/bootstrap.bundle.js" />
+/// <reference path="bootstrap/bootstrap-native.js" />
 /// <reference path="jquery/jquery.js" />
 /// <reference path="jquery/jquery.validate.js" />
 /// <reference path="jquery/jquery.validate.unobtrusive.js" />

@@ -255,7 +255,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Scripts\Bootstrap\bootstrap.bundle.js" />
+    <Content Include="Scripts\Bootstrap\bootstrap-native.js" />
     <Content Include="Scripts\JQuery\jquery.js" />
     <Content Include="Scripts\JQueryUI\jquery-ui.js" />
     <Content Include="Scripts\MvcDatalist\Cultures\mvc-datalist.en.js" />
