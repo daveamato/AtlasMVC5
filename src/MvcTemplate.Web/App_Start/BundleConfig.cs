@@ -20,8 +20,8 @@ namespace MvcTemplate.Web
                 .IncludeDirectory("~/scripts/jqueryui", "*.js", true)
                 .IncludeDirectory("~/scripts/mvcdatalist", "*.js", true)
                 .IncludeDirectory("~/scripts/mvcgrid", "*.js", true)
+                .Include("~/scripts/mvctree/*.js")
                 .Include("~/scripts/bootstrap/*.js")
-                .Include("~/scripts/jstree/*.js")
                 .Include("~/scripts/shared/widgets/*.js");
 
             Bundle publicLib = new ScriptBundle("~/scripts/public/lib.js")
@@ -44,7 +44,7 @@ namespace MvcTemplate.Web
                 .Include("~/content/bootstrap/*.css")
                 .Include("~/content/fontawesome/*.css")
                 .Include("~/content/mvcgrid/*.css")
-                .Include("~/content/jstree/*.css")
+                .Include("~/content/mvctree/*.css")
                 .Include("~/content/mvcdatalist/*.css")
                 .Include("~/content/shared/*.css");
 

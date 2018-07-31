@@ -197,9 +197,7 @@
     <Content Include="Images\JQueryUI\ui-icons_888888_256x240.png" />
     <Content Include="Images\JQueryUI\ui-icons_cd0a0a_256x240.png" />
     <Content Include="Images\JQueryUI\ui-icons_ffffff_256x240.png" />
-    <Content Include="Images\JsTree\32px.png" />
-    <Content Include="Images\JsTree\40px.png" />
-    <Content Include="Images\JsTree\throbber.gif" />
+    <Content Include="Images\MvcTree\icons.png" />
     <Content Include="Images\Shared\background.jpg" />
     <Content Include="Images\Shared\content-background.jpg" />
     <Content Include="Images\Shared\menu-active.png" />
@@ -213,10 +211,10 @@
     <Content Include="Content\FontAwesome\Fonts\fa-solid-900.woff" />
     <Content Include="Content\JQueryUI\jquery-ui.css" />
     <Content Include="Content\JQueryUI\jquery-ui.timepicker-addon.css" />
-    <Content Include="Content\JsTree\jstree.css" />
     <Content Include="Content\MvcDatalist\mvc-datalist.css" />
     <Content Include="Content\MvcGrid\Fonts\GridGlyphs.woff" />
     <Content Include="Content\MvcGrid\mvc-grid.css" />
+    <Content Include="Content\MvcTree\mvc-tree.css" />
     <Content Include="Content\Application\Auth\shared.less" />
     <Content Include="Content\Application\Auth\shared.css">
       <DependentUpon>shared.less</DependentUpon>
@@ -258,12 +256,6 @@
     <Content Include="Scripts\Bootstrap\bootstrap-native.js" />
     <Content Include="Scripts\JQuery\jquery.js" />
     <Content Include="Scripts\JQueryUI\jquery-ui.js" />
-    <Content Include="Scripts\MvcDatalist\Cultures\mvc-datalist.en.js" />
-    <Content Include="Scripts\MvcDatalist\Cultures\mvc-datalist.lt.js" />
-    <Content Include="Scripts\MvcDatalist\mvc-datalist.js" />
-    <Content Include="Scripts\MvcGrid\Cultures\mvc-grid.en.js" />
-    <Content Include="Scripts\MvcGrid\Cultures\mvc-grid.lt.js" />
-    <Content Include="Scripts\MvcGrid\mvc-grid.js" />
     <Content Include="Scripts\JQueryUI\Cultures\jquery-ui.en.js" />
     <Content Include="Scripts\JQueryUI\Cultures\jquery-ui.lt.js" />
     <Content Include="Scripts\JQuery\jquery.validate.js" />
@@ -272,15 +264,21 @@
     <Content Include="Scripts\JQuery\Cultures\globalize.en.js" />
     <Content Include="Scripts\JQuery\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\JQueryUI\jquery-ui.timepicker-addon.js" />
-    <Content Include="Scripts\JsTree\jstree.js" />
+    <Content Include="Scripts\MvcDatalist\Cultures\mvc-datalist.en.js" />
+    <Content Include="Scripts\MvcDatalist\Cultures\mvc-datalist.lt.js" />
+    <Content Include="Scripts\MvcDatalist\mvc-datalist.js" />
+    <Content Include="Scripts\MvcGrid\Cultures\mvc-grid.en.js" />
+    <Content Include="Scripts\MvcGrid\Cultures\mvc-grid.lt.js" />
+    <Content Include="Scripts\MvcGrid\mvc-grid.js" />
+    <Content Include="Scripts\MvcTree\mvc-tree.js" />
     <Content Include="Scripts\Shared\site.js" />
     <Content Include="Scripts\Shared\Widgets\alerts.js" />
     <Content Include="Scripts\Shared\Widgets\datalist.js" />
     <Content Include="Scripts\Shared\Widgets\datepicker.js" />
     <Content Include="Scripts\Shared\Widgets\grid.js" />
     <Content Include="Scripts\Shared\Widgets\header.js" />
-    <Content Include="Scripts\Shared\Widgets\jstree.js" />
     <Content Include="Scripts\Shared\Widgets\menu.js" />
+    <Content Include="Scripts\Shared\Widgets\tree.js" />
     <Content Include="Scripts\Shared\Widgets\validator.js" />
     <None Include="Scripts\_references.js" />
   </ItemGroup>

@@ -5,9 +5,9 @@
     Datalist.init();
     Alerts.init();
     Header.init();
-    JsTree.init();
     Menu.init();
     Grid.init();
+    Tree.init();
 })();
 
 // Read only binding

@@ -112,10 +112,10 @@
     <Compile Include="Alerts\AlertsContainer.cs" />
     <Compile Include="Alerts\AlertType.cs" />
     <Compile Include="Extensions\Bootstrap\BootstrapExtensions.cs" />
-    <Compile Include="Extensions\JsTree\JsTree.cs" />
-    <Compile Include="Extensions\JsTree\JsTreeExtensions.cs" />
-    <Compile Include="Extensions\JsTree\JsTreeNode.cs" />
     <Compile Include="Extensions\MvcGrid\MvcGridExtensions.cs" />
+    <Compile Include="Extensions\MvcTree\MvcTree.cs" />
+    <Compile Include="Extensions\MvcTree\MvcTreeExtensions.cs" />
+    <Compile Include="Extensions\MvcTree\MvcTreeNode.cs" />
     <Compile Include="Extensions\Page\AuthorizationExtensions.cs" />
     <Compile Include="Extensions\Page\ContentExtensions.cs" />
     <Compile Include="Mvc\Adapters\AcceptFilesAdapter.cs" />
