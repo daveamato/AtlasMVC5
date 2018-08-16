@@ -49,6 +49,7 @@ namespace MvcTemplate.Web
                 Response.Clear();
                 Server.ClearError();
                 Response.StatusCode = 500;
+                Response.ContentType = "application/json; charset=utf-8";
 
                 if (Context.IsCustomErrorEnabled)
                     Response.Write(JsonConvert.SerializeObject(new { status = "error", data = new { message = Strings.SystemError } }));
