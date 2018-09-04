@@ -153,6 +153,7 @@ namespace MvcTemplate.Tests.Unit.Components.Extensions
             Assert.Equal("text-center", actual.CssClasses);
             Assert.Equal(expression, actual.Expression);
             Assert.Null(actual.Title.ToString());
+            Assert.False(actual.Filter.IsMulti);
             Assert.Single(columns);
         }
 
@@ -194,6 +195,7 @@ namespace MvcTemplate.Tests.Unit.Components.Extensions
             Assert.Equal("text-center", actual.CssClasses);
             Assert.Equal(expression, actual.Expression);
             Assert.Null(actual.Title.ToString());
+            Assert.False(actual.Filter.IsMulti);
             Assert.Single(columns);
         }
 
