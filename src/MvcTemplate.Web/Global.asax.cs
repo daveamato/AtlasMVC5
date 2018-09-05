@@ -7,6 +7,7 @@ using MvcTemplate.Controllers;
 using MvcTemplate.Resources.Shared;
 using MvcTemplate.Web.DependencyInjection;
 using Newtonsoft.Json;
+using NonFactors.Mvc.Grid;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -94,6 +95,8 @@ namespace MvcTemplate.Web
         public virtual void RegisterGlobalizationLanguages()
         {
             GlobalizationManager.Languages = DependencyResolver.Current.GetService<ILanguages>();
+            (MvcGrid.Filters as GridFilters).BooleanFalseOptionText = () => Strings.No;
+            (MvcGrid.Filters as GridFilters).BooleanTrueOptionText = () => Strings.Yes;
         }
         public virtual void RegisterModelMetadataProvider()
         {

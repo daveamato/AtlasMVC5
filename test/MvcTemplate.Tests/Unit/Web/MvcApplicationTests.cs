@@ -2,8 +2,10 @@
 using MvcTemplate.Components.Mvc;
 using MvcTemplate.Components.Security;
 using MvcTemplate.Controllers;
+using MvcTemplate.Resources.Shared;
 using MvcTemplate.Tests.Objects;
 using MvcTemplate.Web;
+using NonFactors.Mvc.Grid;
 using NSubstitute;
 using System;
 using System.Collections.Generic;
@@ -221,6 +223,20 @@ namespace MvcTemplate.Tests.Unit.Web
             ILanguages expected = languages;
 
             Assert.Equal(expected, actual);
+        }
+
+        [Fact]
+        public void RegisterGlobalizationLanguages_ForGrid()
+        {
+            ILanguages languages = Substitute.For<ILanguages>();
+            DependencyResolver.Current.GetService<ILanguages>().Returns(languages);
+
+            application = Substitute.ForPartsOf<MvcApplication>();
+            application.RegisterGlobalizationLanguages();
+
+            Assert.Empty((MvcGrid.Filters as GridFilters).BooleanEmptyOptionText());
+            Assert.Equal(Strings.No, (MvcGrid.Filters as GridFilters).BooleanFalseOptionText());
+            Assert.Equal(Strings.Yes, (MvcGrid.Filters as GridFilters).BooleanTrueOptionText());
         }
 
         #endregion
