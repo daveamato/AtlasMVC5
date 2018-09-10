@@ -9,7 +9,7 @@ using System.Linq;
 namespace MvcTemplate.Data.Migrations
 {
     [ExcludeFromCodeCoverage]
-    internal sealed class Configuration : DbMigrationsConfiguration<Context>, IDisposable
+    public sealed class Configuration : DbMigrationsConfiguration<Context>, IDisposable
     {
         private IUnitOfWork UnitOfWork { get; set; }
 
@@ -18,12 +18,20 @@ namespace MvcTemplate.Data.Migrations
             ContextKey = "Context";
             CommandTimeout = 300;
         }
+        public Configuration(Context context)
+        {
+            UnitOfWork = new UnitOfWork(context);
+        }
 
         protected override void Seed(Context context)
         {
             IAuditLogger logger = new AuditLogger(new Context(), 0);
             UnitOfWork = new UnitOfWork(context, logger);
 
+            SeedData();
+        }
+        public void SeedData()
+        {
             SeedPermissions();
             SeedRoles();
 
