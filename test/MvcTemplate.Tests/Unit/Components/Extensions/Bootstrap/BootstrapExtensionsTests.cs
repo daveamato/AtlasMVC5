@@ -92,25 +92,11 @@ namespace MvcTemplate.Tests.Unit.Components.Extensions
         }
 
         [Fact]
-        public void FormLabelFor_OverridenRequiredExpression()
-        {
-            HtmlHelper<BootstrapAdvancedModel> htmlHelper = HtmlHelperFactory.CreateHtmlHelper(new BootstrapAdvancedModel());
-
-            String actual = htmlHelper.FormLabelFor(x => x.NotRequired).ToString();
-            String expected =
-                "<label for=\"NotRequired\">" +
-                    "<span class=\"require\">*</span>" +
-                "</label>";
-
-            Assert.Equal(expected, actual);
-        }
-
-        [Fact]
         public void FormLabelFor_RequiredExpression()
         {
-            String actual = html.FormLabelFor(x => x.Relation.Required).ToString();
+            String actual = html.FormLabelFor(x => x.Relation.Number).ToString();
             String expected =
-                "<label for=\"Relation_Required\">" +
+                "<label for=\"Relation_Number\">" +
                     "<span class=\"require\">*</span>" +
                 "</label>";
 
