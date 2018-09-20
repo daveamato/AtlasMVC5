@@ -21,7 +21,7 @@
     widgets.find('textarea').attr({ readonly: 'readonly', tabindex: -1 });
 
     if (window.MvcDatalist) {
-        widgets.find('.datalist').each(function (element) {
+        widgets.find('.datalist').each(function (i, element) {
             new MvcDatalist(element, { readonly: true });
         });
     }
