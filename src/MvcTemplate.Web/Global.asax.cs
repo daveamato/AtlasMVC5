@@ -76,6 +76,10 @@ namespace MvcTemplate.Web
                 Response.Redirect(url.RouteUrl(route));
             }
         }
+        public void Application_PreSendRequestHeaders()
+        {
+            Response.Headers.Remove("Server");
+        }
 
         public virtual void RegisterSecureResponseConfiguration()
         {
